@@ -1,13 +1,231 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.dynamic-form-container {
+  width: 80%;
+  margin: auto;
+  text-align: center;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.form-field {
+  margin: 15px 0;
 }
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.progress-bar {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.progress {
+  height: 10px;
+  background-color: #4caf50;
+  border-radius: 5px;
+}
+
+.data-table {
+  margin: 20px auto;
+  text-align: left;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+
+.progress-bar-container {
+  background-color: #f3f3f3;
+  border-radius: 10px;
+  margin: 15px 0;
+  height: 20px;
+  width: 100%;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #4caf50;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+
+.dynamic-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.circular-progress-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.circular-progress {
+  transform: rotate(-90deg);
+}
+
+.progress-background {
+  stroke: #e6e6e6;
+}
+
+.progress-circle {
+  stroke: #4caf50;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-section {
+  flex: 1;
+}
+.dynamic-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.circular-progress-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+.circular-progress {
+  transform: rotate(-90deg);
+}
+
+.progress-background {
+  stroke: #e6e6e6;
+}
+
+.progress-circle {
+  stroke: #4caf50;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 0.3s ease;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-section {
+  flex: 1;
+}
+
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4caf50;
+  color: white;
+}
+
+button[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.data-table-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #f4f4f4;
+}
+
+button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
